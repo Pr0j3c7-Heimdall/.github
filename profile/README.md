@@ -8,7 +8,7 @@
 **Host Organization:** 성공회대학교 우로장학회   
 
 ## Team Composition   
-**Advisor:** 박문범  
+**Advisor:** 이종현   
 **Project Manager:** 최원혁   
 **Project Member:** 김예은 / `Detection Tool Development`      
 **Project Member:** 박종범 / `AI Product Research`  
