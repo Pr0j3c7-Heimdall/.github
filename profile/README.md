@@ -3,8 +3,7 @@
 ## Introduction  
 **Team Name:** Team.Heimdall  
 **Project Title:** 멀티미디어 기반의 AI 생성물 검증 기법 연구 및 탐지 도구 개발   
-**Project Output Tool Name:** Heimdall `(Draft Name)`     
-**Paper:** 멀티미디어 기반 AI 생성물 검증 기법 연구: 생성물의 부정 사용 방지 전략   
+**Web Service Name:** Heimdall       
 **Host Organization:** 성공회대학교 우로장학회   
 
 ## Team Composition   
@@ -15,7 +14,7 @@
 **Project Member:** 송자운 / `AI Product Research`  
 **Project Member:** 이재용 / `Detection Tool Development`  
 
-## Web Serivce Skills 
+## Web Service Skills 
 ### Image Detection Framework    
 **C2PA**
 - c2patool 사용
