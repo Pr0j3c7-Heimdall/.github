@@ -38,12 +38,16 @@
 - exiftool 사용
 - 촬영 기기/소프트웨어/저장 이력 관련 필드를 정리해 구조화 후 저장
 
+<br>
+
 ### Infra
 - **Server:** FastAPI + Uvicorn   
 - **Database:** MySQL (SQLAlchemy Async ORM)   
 - **CI/CD:** GitHub Actions (Self-hosted Runner)   
 - **Deployment:** Linux (Ubuntu) 기반 배포 환경   
 - **AI Inference:** PyTorch 기반 딥러닝 모델 파이프라인   
+
+<br>
 
 ### Tech Stacks
 **BE**
