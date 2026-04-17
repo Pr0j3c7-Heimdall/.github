@@ -1,10 +1,11 @@
 # <img width="40" height="40" alt="Heimdall_Logo (5)" src="https://github.com/user-attachments/assets/527a9ae5-d462-40c6-913c-4d4da802b2df" /> Heimdall  
 
 ## Introduction  
-**Team Name:** Team.Heimdall  
+**Team Name:** Heimdall  
 **Project Title:** 멀티미디어 기반의 AI 생성물 검증 기법 연구 및 탐지 도구 개발   
 **Web Service Name:** Heimdall       
 **Host Organization:** 성공회대학교 우로장학회   
+**Note:** 재단법인 성공회대학교 우로장학회의 학생연구프로젝트 지원사업에 선정되어, 장학 지원을 받아 수행된 프로젝트   
 
 ## Team Composition   
 **Advisor:** 이종현   
