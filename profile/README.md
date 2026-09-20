@@ -41,6 +41,41 @@
 
 <br>
 
+### Audio Detection Framework  
+**C2PA**
+- c2patool 사용
+- Manifest에 포함된 서명/해시 기반 검증을 통해 "기록 신뢰 가능 여부" 검증
+- Manifest에 남아 있는 생성 도구/플랫폼 정보 및 관련 내부 값을 해석 후 구조화해 저장
+- C2PA가 없거나, 불완전/검증 실패 시 다음 단계인 음성 파일 유형 분류를 수행 
+
+**음성 파일 유형 분석**
+- Yamnet(하기 3개의 조건으로 일반 음성, 가창, 예외 판별)
+- 최고 점수 ≥ 최소 신뢰도
+- 최고 점수 - 차순위 점수 ≥ 최소 Margin
+- 차순위 - 삼순위 ≥ 최소 Margin
+- 예외 판정은 서비스 불가
+
+**음성 이진분류**
+- SSL-AASIST
+- RawNet3
+- CQCC+SSL+AASIST
+- Softmax 기반 앙상블 가중치(각 모듈의 출력 점수를 Softmax로 가중치화한 뒤 가중 결합하여 최종 AI/Real 판정)
+
+**가창 이분류**
+- Demucs(가창 파일의 배경음이 높을 경우, Demucs를 통해 가창음, 배경음 분리 / 배경음이 낮을 경우, Demucs 미처리)
+  - Demucs 처리가 진행될 경우(원본 및 Demucs 처리 파일 모두에 대한 이진분류 진행)
+  - Demucs 처리 안할 경우(원본 파일만 진행)
+- AASIST
+- RawNet3
+- LCNN
+- Softmax 기반 앙상블 가중치(각 모듈의 출력 점수를 Softmax로 가중치화한 뒤 가중 결합하여 최종 AI/Real 판정)
+
+**메타데이터**
+- exiftool 사용
+- 녹음 기기/소프트웨어/저장 이력 관련 필드를 정리해 구조화 후 저장
+
+<br>
+
 ### Infra
 - **Server:** FastAPI + Uvicorn   
 - **Database:** MySQL (SQLAlchemy Async ORM)   
